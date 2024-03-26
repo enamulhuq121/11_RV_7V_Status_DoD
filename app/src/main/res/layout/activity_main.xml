@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvNameLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Participant Name" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Enter participant name" />
+
+    <TextView
+        android:id="@+id/tvGenderLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender" />
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvStatusLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status" />
+
+    <Spinner
+        android:id="@+id/spLiveOrDeath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:entries="@array/status_list"
+        android:prompt="@string/status_prompt" />
+
+    <TextView
+        android:id="@+id/tvDobLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth" />
+
+
+    <EditText
+        android:id="@+id/btnSelectDob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Select Date of Birth" />
+
+    <TextView
+        android:id="@+id/tvDodLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date of Death" />
+
+
+    <EditText
+        android:id="@+id/btnSelectDod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Select Date of Death" />
+
+    <Spinner
+        android:id="@+id/spOccupation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:entries="@array/occupation_list"
+        android:prompt="@string/occupation_prompt" />
+
+    <TextView
+        android:id="@+id/tvHobbyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hobbies" />
+
+    <CheckBox
+        android:id="@+id/cbHobby1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobby 1" />
+
+    <CheckBox
+        android:id="@+id/cbHobby2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobby 2" />
+
+    <CheckBox
+        android:id="@+id/cbHobby3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobby 3" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Participant" />
+    <Button
+        android:id="@+id/btnRead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to List" />
+</LinearLayout>

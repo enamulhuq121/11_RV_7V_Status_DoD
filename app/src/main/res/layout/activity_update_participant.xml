@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/editTextNameUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Enter name" />
+
+
+    <TextView
+        android:id="@+id/textViewGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:id="@+id/rgGenderUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textStyle="bold" />
+    <Spinner
+        android:id="@+id/spStatusUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:entries="@array/status_list"
+        android:prompt="@string/status_prompt" />
+    <TextView
+        android:id="@+id/tvDobLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth" />
+
+
+    <EditText
+        android:id="@+id/btnSelectDobUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Select Date of Birth" />
+
+    <TextView
+        android:id="@+id/tvDodLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date of Death" />
+
+
+    <EditText
+        android:id="@+id/btnSelectDodUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Select Date of Death" />
+
+    <Spinner
+        android:id="@+id/spOccupationUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:entries="@array/occupation_list"
+        android:prompt="@string/occupation_prompt" />
+
+    <TextView
+        android:id="@+id/tvHobbyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hobbies" />
+
+    <CheckBox
+        android:id="@+id/cbHobby1Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobby 1" />
+
+    <CheckBox
+        android:id="@+id/cbHobby2Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobby 2" />
+
+    <CheckBox
+        android:id="@+id/cbHobby3Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobby 3" />
+
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Update" />
+
+</LinearLayout>
